@@ -1,0 +1,19 @@
+.project-box {
+    position: relative; /* ให้แน่ใจว่าใช้ relative เพื่อจัดตำแหน่งรูปภาพ */
+    overflow: hidden;   /* ทำให้รูปภาพไม่ล้นออกจากกล่อง */
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;  /* ทำให้รูปภาพเต็มขนาดของกล่อง */
+    height: 100%; /* ทำให้รูปภาพเต็มความสูงของกล่อง */
+    object-fit: cover; /* ทำให้รูปภาพเต็มกล่องโดยคงอัตราส่วน */
+    position: absolute; /* ใช้เพื่อวางรูปภาพให้ตรงกลางกล่อง */
+    top: 0;
+    left: 0;
+}
+
+.project-box h3 {
+    position: relative; /* ทำให้ข้อความอยู่ด้านบนรูป */
+    z-index: 1;  /* ให้อยู่เหนือรูปภาพ */
+}
